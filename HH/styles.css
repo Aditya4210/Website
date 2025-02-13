@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Dancing Script', cursive;
+    background: url('https://t4.ftcdn.net/jpg/06/72/47/31/360_F_672473108_ShsRnfDtfVgwheDe4DDPCsDtMqCFUc0y.jpg') no-repeat center center/cover;
+    color: #fdfafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    position: relative;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #ff6b81;
+  }
+  
+  .message {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #fff;
+    background: #ff6b81;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background: #ff4757;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  #surpriseText {
+    font-size: 1.8rem;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    color: #ff6b81;
+  }
+  
+  .hearts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+  
+  .hearts::before, .hearts::after {
+    content: '💖';
+    position: absolute;
+    font-size: 30px;
+    animation: float 5s infinite ease-in-out;
+  }
+  
+  .hearts::before {
+    top: 10%;
+    left: 20%;
+    animation-delay: 0s;
+  }
+  
+  .hearts::after {
+    top: 30%;
+    left: 80%;
+    animation-delay: 2s;
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  
+  .navigation {
+    margin-top: 20px;
+  }
+  
+  .nav-link {
+    color: #ff6b81;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #ff4757;
+  }
+  
+  .gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .gallery-img {
+    width: 300px;
+    height: 380px;
+    border-radius: 10px;
+    border: 2px solid #ff6b81;
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-img:hover {
+    transform: scale(1.1);
+  }
+  
+  .teddy {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 100px;
+    animation: float 3s infinite ease-in-out;
+  }
+
+.teddy1{
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    width: 100px;
+    animation: float 3s infinite ease-in-out;
+
+}
